@@ -3,6 +3,8 @@
 Allows an Arduino to change the reported speed of a fan by reading the signal from the tachometer wire and creating a new modified output signal.
 Optionally supports using a potentiometer to set the modification factor between fan speed and output speed.
 
+This is useful to trick servers/routers/switches/etc. into being happy running with slower fans when it expects a much higher RPM to not complain.
+
 The following boards have a preconfigured configuration:
   - Digispark Pro    (One fan)
   - Arduino Uno/Nano (One fan)
