@@ -3,7 +3,7 @@
 //   Arduino Uno/Nano (One fan)
 //   Teensy 2.0       (Two fans)
 //   Arduino Mega     (Four fans)
-// And a custom config to allow any other board with one 16-bit timer and free hardware inturrupt pin per fan configured
+// And a custom config to allow any other board with one 16-bit timer and free hardware interrupt pin per fan configured
 
 // Uses Timer1/3/4/5 for each fan respectively as these are usually the 16-bit timers if the board has them
 
@@ -33,7 +33,7 @@
   //  Can also define the same pin to control multiple fans from the same potentiometer, e.g.:
   // #define POT_PIN_3 POT_PIN_1
 // There are defaults for a few boards configured below.
-// Ideally comment out fan configs that arent being used on your board if any.
+// Ideally comment out fan configs that aren't being used on your board if any.
 
 #if defined(PINMAPPING_DIGI)
   // Could use defined(__AVR_ATtinyX7__) instead for more general boards, but not sure on pin mapping
@@ -106,7 +106,7 @@
 #define ONE_MINUS_ALPHA 0.5f
 
 // TODO: CS1x is only for Timer1, unsure if it really matters that using it for other timers?
-// Uncomment deseired resolution setting of output RPM:
+// Uncomment desired resolution setting of output RPM:
   // clk/64 (011):
   //   0.000,004 sec resolution & Max interval: 0.262 sec
   //   Min pulse frequency: 3.8 Hz    & Max: 250,000 Hz
